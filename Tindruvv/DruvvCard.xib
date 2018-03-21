@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14105" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DruvvCard" customModule="Tindruvv" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundContainerView" destination="hx1-Sg-F4x" id="38P-7t-6dg"/>
+                <outlet property="imageView" destination="q9O-h2-kbJ" id="ndY-7f-xJ9"/>
+                <outlet property="subtitleLabel" destination="Jnj-GL-J3z" id="E2O-mo-M1K"/>
+                <outlet property="titleLabel" destination="49z-du-vsT" id="Lbi-7v-puv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ubQ-XN-WK2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hx1-Sg-F4x">
+                    <rect key="frame" x="20" y="20" width="335" height="627"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="druvv2" translatesAutoresizingMaskIntoConstraints="NO" id="q9O-h2-kbJ">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="558"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="nbQ-Wx-ILf">
+                            <rect key="frame" x="0.0" y="565.5" width="335" height="61.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Dhruv Sringari" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49z-du-vsT">
+                                    <rect key="frame" x="8" y="2" width="157" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Just a normal druvv." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jnj-GL-J3z">
+                                    <rect key="frame" x="8" y="33" width="154.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Jnj-GL-J3z" firstAttribute="leading" secondItem="nbQ-Wx-ILf" secondAttribute="leading" constant="8" id="9ni-MU-1iD"/>
+                                <constraint firstItem="49z-du-vsT" firstAttribute="leading" secondItem="nbQ-Wx-ILf" secondAttribute="leading" constant="8" id="ASF-dv-M4Z"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jnj-GL-J3z" secondAttribute="trailing" constant="8" id="KHd-LW-iml"/>
+                                <constraint firstAttribute="bottom" secondItem="Jnj-GL-J3z" secondAttribute="bottom" constant="8" id="VWk-Dj-nBS"/>
+                                <constraint firstItem="Jnj-GL-J3z" firstAttribute="top" secondItem="49z-du-vsT" secondAttribute="bottom" constant="2" id="W0P-h8-agz"/>
+                                <constraint firstItem="Jnj-GL-J3z" firstAttribute="top" secondItem="49z-du-vsT" secondAttribute="bottom" constant="2" id="gt9-KT-3Vs"/>
+                                <constraint firstItem="49z-du-vsT" firstAttribute="top" secondItem="nbQ-Wx-ILf" secondAttribute="top" constant="2" id="kQ3-Xx-RT1"/>
+                                <constraint firstItem="Jnj-GL-J3z" firstAttribute="top" secondItem="49z-du-vsT" secondAttribute="bottom" constant="2" id="pcX-6h-euw"/>
+                                <constraint firstItem="Jnj-GL-J3z" firstAttribute="top" secondItem="49z-du-vsT" secondAttribute="bottom" constant="2" id="rBb-ih-viH"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="nbQ-Wx-ILf" secondAttribute="bottom" id="MN0-hn-ehN"/>
+                        <constraint firstAttribute="trailing" secondItem="nbQ-Wx-ILf" secondAttribute="trailing" id="hgK-3y-ehz"/>
+                        <constraint firstItem="nbQ-Wx-ILf" firstAttribute="leading" secondItem="hx1-Sg-F4x" secondAttribute="leading" id="hz6-QV-XIp"/>
+                        <constraint firstAttribute="trailing" secondItem="q9O-h2-kbJ" secondAttribute="trailing" id="kSg-Lf-c1E"/>
+                        <constraint firstAttribute="bottom" secondItem="q9O-h2-kbJ" secondAttribute="bottom" constant="69" id="oOD-Fm-YU5"/>
+                        <constraint firstItem="q9O-h2-kbJ" firstAttribute="leading" secondItem="hx1-Sg-F4x" secondAttribute="leading" id="qEd-qi-Ndi"/>
+                        <constraint firstItem="q9O-h2-kbJ" firstAttribute="top" secondItem="hx1-Sg-F4x" secondAttribute="top" id="xhF-G0-684"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="hx1-Sg-F4x" firstAttribute="top" secondItem="cSg-KJ-oU4" secondAttribute="top" id="1N1-6e-Cej"/>
+                <constraint firstItem="hx1-Sg-F4x" firstAttribute="leading" secondItem="cSg-KJ-oU4" secondAttribute="leading" constant="20" id="2Wp-qh-5g7"/>
+                <constraint firstItem="cSg-KJ-oU4" firstAttribute="trailing" secondItem="hx1-Sg-F4x" secondAttribute="trailing" constant="20" id="5lt-kf-OfS"/>
+                <constraint firstItem="cSg-KJ-oU4" firstAttribute="bottom" secondItem="hx1-Sg-F4x" secondAttribute="bottom" constant="20" id="sz8-Al-H9J"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="cSg-KJ-oU4"/>
+            <point key="canvasLocation" x="39" y="40"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="druvv2" width="1944" height="2592"/>
+    </resources>
+</document>

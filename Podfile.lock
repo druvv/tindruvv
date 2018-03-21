@@ -1,0 +1,15 @@
+PODS:
+  - JSSAlertView (4.0.0)
+  - pop (1.0.10)
+
+DEPENDENCIES:
+  - JSSAlertView
+  - pop (= 1.0.10)
+
+SPEC CHECKSUMS:
+  JSSAlertView: 118a2b17cae7561b514cf74c4b794baea9afd196
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+
+PODFILE CHECKSUM: 30a486a5d8d6172f41e6c97239661bca6b4228fb
+
+COCOAPODS: 1.4.0
